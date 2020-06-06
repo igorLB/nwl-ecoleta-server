@@ -10,7 +10,8 @@ class ItemsController {
             return {
                 id: item.id,
                 title: item.title,
-                image_url: process.env.APP_URL + "/uploads/" + item.image,
+                image_url:
+                    process.env.APP_URL + "/uploads/system-files/" + item.image,
             };
         });
 
