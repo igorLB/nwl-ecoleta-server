@@ -1,13 +1,13 @@
 import knex from "knex";
-import path from "path";
+require("dotenv").config();
 
 const connection = knex({
     client: "mysql",
     connection: {
-        host: "sql10.freemysqlhosting.net",
-        user: "sql10346143",
-        password: "azvj1JWyVC",
-        database: "sql10346143",
+        host: process.env.DATABASE_HOST,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASS,
+        database: process.env.DATABASE_NAME,
     },
     useNullAsDefault: true,
 });

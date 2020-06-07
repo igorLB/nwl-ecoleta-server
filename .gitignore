@@ -1,5 +1,5 @@
 node_modules
 uploads/*
+.env
 !uploads/.gitkeep
 !uploads/system-files
-
